@@ -1,0 +1,14 @@
+﻿@model IEnumerable<Vet2.Models.Pet>
+@{
+    ViewBag.Title = "PetView";
+}
+
+<h2>PetView</h2>
+<p>This this the Pet view page</p>
+<ul>
+    @foreach(var item in Model)
+    {
+        <li>@Html.DisplayFor(modelItem=>item.PetName)</li>
+    }
+</ul>
+
